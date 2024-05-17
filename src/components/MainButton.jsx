@@ -1,4 +1,4 @@
-function AuthButton({ text, color }) {
+function MainButton({ text, color }) {
     return (
         <>
             <button
@@ -10,4 +10,4 @@ function AuthButton({ text, color }) {
     )
 }
 
-export default AuthButton
+export default MainButton
