@@ -4,7 +4,7 @@ import Input from "./components/Input";
 function App() {
   return (
     <>
-      <Input type="text" placeholder={"Nome"}></Input>
+      <Input type="password" placeholder={"Nome"}></Input>
     </>
   );
 }
