@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { UserRound, Phone, LockKeyhole } from 'lucide-react'
 
 /**
  * Componente de entrada de dados.
@@ -13,19 +14,36 @@ import PropTypes from 'prop-types'
  */
 
 function Input({ type, placeholder }) {
+
+    const getIconByPlaceholder = placeholder => {
+        switch (placeholder.toLowerCase()) {
+            case 'nome':
+                return <UserRound></UserRound>
+            case 'telefone':
+                return <Phone></Phone>
+            case 'senha':
+                return <LockKeyhole></LockKeyhole>
+            default:
+                return <LockKeyhole></LockKeyhole>
+        }
+    }
+
     return (
         <>
-            <input
-                type={type}
-                placeholder={placeholder}
-                className="text-sm p-3 drop-shadow rounded w-72 placeholder:text-gray-900 placeholder:text-sm" />
+            <div className="flex gap-2 p-2 rounded w-64 border-2" id='inputId'>
+                {getIconByPlaceholder(placeholder)}
+                <input
+                    type={type}
+                    placeholder={placeholder}
+                    className="text-sm bg-transparent outline-none placeholder:text-gray-900 w-52" />
+            </div>
         </>
     )
 }
 
 Input.propTypes = {
-    type: PropTypes.string.isRequired,
-    placeholder: PropTypes.string
+    type: PropTypes.string,
+    placeholder: PropTypes.string.isRequired
 }
 
 export default Input
