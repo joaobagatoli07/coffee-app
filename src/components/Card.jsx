@@ -2,9 +2,7 @@ import { Plus } from 'lucide-react';
 
 function Card({ imgSrc, title, description, price }) {
   return (
-
     <main className=' w-full h-[100vh] flex flex-col justify-center items-center '>
-
       <div className='flex flex-col justify-center items-center' >
         <img className='rounded-t-xl' src={imgSrc} alt="cofe" />
         <div class=' flex flex-col justify-center shadow-xl p-4 bg-black-500- w-full rounded-xl'>
@@ -23,7 +21,6 @@ function Card({ imgSrc, title, description, price }) {
         </div>
       </div>
     </main>
-
   );
 }
 
