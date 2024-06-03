@@ -11,28 +11,27 @@ import { UserRound, Phone, LockKeyhole } from "lucide-react";
  * @param {Object} props - Propriedades do componente.
  * @param {string} props.type - Tipo de entrada ('text', 'password').
  * @param {string} props.placeholder - Texto que será exibido dentro do input.
+ * @param {string} props.icon - Ícone que será exibido dentro do input ('user', 'phone', 'lock').
  */
 
-function Input({ type, placeholder }) {
-  const getIconByPlaceholder = (placeholder) => {
-    switch (placeholder.toLowerCase()) {
-      case "nome":
+function Input({ type, placeholder, icon }) {
+  const setIcon = icon => {
+    switch (icon.toLowerCase()) {
+      case "user":
         return <UserRound></UserRound>;
-      case "usuário":
-        return <UserRound></UserRound>;
-      case "telefone":
+      case "phone":
         return <Phone></Phone>;
-      case "senha":
+      case "lock":
         return <LockKeyhole></LockKeyhole>;
       default:
-        return <LockKeyhole></LockKeyhole>;
+        return '';
     }
   };
 
   return (
     <>
       <div className="flex gap-2 p-2 rounded w-64 border-2">
-        {getIconByPlaceholder(placeholder)}
+        {setIcon(icon)}
         <input
           type={type}
           placeholder={placeholder}
@@ -46,6 +45,7 @@ function Input({ type, placeholder }) {
 Input.propTypes = {
   type: PropTypes.string,
   placeholder: PropTypes.string.isRequired,
+  icon: PropTypes.string
 };
 
 export default Input;
