@@ -1,7 +1,7 @@
-import Instagram from '../assets/icons/Instagram'
-import Facebook from '../assets/icons/Facebook'
-import Whatsapp from '../assets/icons/Whatsapp'
-import Logo from '../assets/icons/Logo'
+import Instagram from '../../assets/icons/Instagram'
+import Facebook from '../../assets/icons/Facebook'
+import Whatsapp from '../../assets/icons/Whatsapp'
+import Logo from '../../assets/icons/Logo'
 
 function Footer() {
     return (
