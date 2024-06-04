@@ -1,10 +1,26 @@
+import { Link } from 'react-router-dom'
+
 function Nav(){
+    let isUserLogged = false;
+
     return (
-        <div className="container h-10 min-w-full">
-            <div className="columns-5 h-10 bg-red-300"></div>
-            <div className="columns-2 h-10 bg-amber-300"></div>
-            <div className="columns-10 h-10 bg-lime-500"></div>
-        </div>
+        <nav className="container flex w-full">
+            <div className="columns-4">
+                <div>Icone</div>
+            </div>
+            <div className="columns-4">
+                <div><Link to="/">Home</Link></div>
+                <div><Link to="/Carrinho">Carrinho</Link></div>
+                <div><Link to="/Pedidos">Pedidos</Link></div>
+            </div>
+            <div className="columns-4">
+            {isUserLogged ? (
+                <div>Oi</div>
+                ) : (
+                    <div>Login</div>
+                )}
+            </div>
+        </nav>     
     )
 }
 
