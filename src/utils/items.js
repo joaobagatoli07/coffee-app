@@ -9,6 +9,7 @@ const items = [
         medium: 4.50,
         large: 5.50
     }
+    image: 
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const items = [
         medium: 4.50,
         large: 6.50
     }
+    image: 
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const items = [
         medium: 5.50,
         large: 7.50
     }
+    image: 
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const items = [
         medium: 5.90,
         large: 7.50
     }
+    image: 
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const items = [
         medium: 7.60,
         large: 8.50
     }
+    image: 
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ const items = [
         medium: 9.50,
         large: 10.90
     }
+    image: 
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ const items = [
         medium: 15.50,
         large: 17.50
     }
+    image: 
   },
   {
     id: 8,
@@ -86,6 +93,7 @@ const items = [
         medium: 18.50,
         large: 20.50
     }
+    image: 
   },
   {
     id: 9,
@@ -97,6 +105,7 @@ const items = [
         medium: 15.50,
         large: 17.50
     }
+    image: 
   },
   {
     id: 10,
@@ -108,6 +117,7 @@ const items = [
         medium: 12.50,
         large: 16.50
     }
+    image: 
   },
   {
     id: 11,
@@ -118,7 +128,8 @@ const items = [
         small: 9.50,
         medium: 13.50,
         large: 15.99
-    }
+    },
+    image: 
   },
   {
     id: 12,
@@ -130,6 +141,7 @@ const items = [
         medium: 5.50,
         large: 6.50
     }
+    image: 
   },
   {
     id: 13,
@@ -141,6 +153,7 @@ const items = [
         medium: 8.50,
         large: 10.50
     }
+    image: 
   },
   {
     id: 14,
@@ -152,6 +165,7 @@ const items = [
         medium: 13.50,
         large: 16.50
     }
+    image: 
   },
   {
     id: 15,
@@ -163,5 +177,6 @@ const items = [
         medium: 8.50,
         large: 12.50
     }
+    image: 
   },
 ];
