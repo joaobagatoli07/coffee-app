@@ -8,8 +8,8 @@ const items = [
         small: 3.50,
         medium: 4.50,
         large: 5.50
-    }
-    image: 
+    },
+    image: '../assets/images/Caramel_Macchiato1'
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const items = [
         small: 3.50,
         medium: 4.50,
         large: 6.50
-    }
+    },
     image: 
   },
   {
@@ -32,7 +32,7 @@ const items = [
         small: 4.50,
         medium: 5.50,
         large: 7.50
-    }
+    },
     image: 
   },
   {
@@ -44,7 +44,7 @@ const items = [
         small: 4.50,
         medium: 5.90,
         large: 7.50
-    }
+    },
     image: 
   },
   {
@@ -56,7 +56,7 @@ const items = [
         small: 5.50,
         medium: 7.60,
         large: 8.50
-    }
+    },
     image: 
   },
   {
@@ -68,7 +68,7 @@ const items = [
         small: 7.50,
         medium: 9.50,
         large: 10.90
-    }
+    },
     image: 
   },
   {
@@ -80,7 +80,7 @@ const items = [
         small: 11.99,
         medium: 15.50,
         large: 17.50
-    }
+    },
     image: 
   },
   {
@@ -92,7 +92,7 @@ const items = [
         small: 15.50,
         medium: 18.50,
         large: 20.50
-    }
+    },
     image: 
   },
   {
@@ -104,7 +104,7 @@ const items = [
         small: 11.50,
         medium: 15.50,
         large: 17.50
-    }
+    },
     image: 
   },
   {
@@ -116,7 +116,7 @@ const items = [
         small: 9.99,
         medium: 12.50,
         large: 16.50
-    }
+    },
     image: 
   },
   {
@@ -140,7 +140,7 @@ const items = [
         small: 4.60,
         medium: 5.50,
         large: 6.50
-    }
+    },
     image: 
   },
   {
@@ -152,7 +152,7 @@ const items = [
         small: 6.50,
         medium: 8.50,
         large: 10.50
-    }
+    },
     image: 
   },
   {
@@ -164,7 +164,7 @@ const items = [
         small: 10.50,
         medium: 13.50,
         large: 16.50
-    }
+    },
     image: 
   },
   {
@@ -176,7 +176,7 @@ const items = [
         small: 6.50,
         medium: 8.50,
         large: 12.50
-    }
+    },
     image: 
-  },
+  }
 ];
