@@ -17,12 +17,14 @@ function Home(){
         }
     ]
 
-    return ( 
-        {
+    return (
+        <>
+          {
             items.map(item => ( 
                 <Card imgSrc={item.image} title={item.title} description={item.description} price={item.price}></Card>
             ))
         }
+        </> 
     )
 }
 
