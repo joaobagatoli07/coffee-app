@@ -5,7 +5,7 @@ function Nav() {
     let isUserLogged = false;
 
     return (
-        <header className='w-full flex justify-center items-center bg-amber-950 text-white'>
+        <header className='w-full flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
             <div className='w-1/5'>
                 <Logo width='35' height='51'></Logo>
             </div>

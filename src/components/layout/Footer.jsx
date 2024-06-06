@@ -5,10 +5,10 @@ import Logo from '../../assets/icons/Logo'
 
 function Footer() {
     return (
-        <footer className='flex justify-center items-center w-full pt-4 pb-4 bg-amber-950 text-white fixed bottom-0'>
+        <footer className='flex justify-center items-center w-full pt-4 pb-4 bg-amber-950 text-white text-sm fixed bottom-0'>
             <div className='flex justify-between w-4/5'>
                 <div>
-                    <Logo width="55" height="76"></Logo>
+                    <Logo width='35' height='51'></Logo>
                     <p>Contato: 47 99698-9898</p>
                     <p>Email: coffe@gmail.com</p>
                 </div>
