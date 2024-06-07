@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/icons/Logo'
+import ProfileImage from '../ProfileImage';
 
 function Nav() {
-    let isUserLogged = false;
+    const isUserLogged = true;
 
     return (
         <header className='w-full flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
@@ -16,7 +17,7 @@ function Nav() {
             </nav>
             <div className='w-1/5 flex justify-end gap-5'>
                 {isUserLogged ? (
-                    <div>Foto</div>
+                    <div><ProfileImage src="../../assets/images/profilePicture.jpg" userName="João"></ProfileImage></div>
                 ) : (
                     <>
                         <div><Link to='/'>Login</Link></div>
