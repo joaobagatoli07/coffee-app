@@ -3,12 +3,12 @@ import Logo from '../../assets/icons/Logo'
 import ProfileImage from '../ProfileImage';
 
 function Nav() {
-    const isUserLogged = true;
+    const isUserLogged = false;
 
     return (
         <header className='w-full flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
             <div className='w-1/5'>
-                <Logo width='35' height='51'></Logo>
+                <Link to='/Home'><Logo width='35' height='51'></Logo></Link>
             </div>
             <nav className='w-2/5 flex justify-center gap-12'>
                 <div><Link to='/Home'>Home</Link></div>
@@ -17,7 +17,13 @@ function Nav() {
             </nav>
             <div className='w-1/5 flex justify-end gap-5'>
                 {isUserLogged ? (
-                    <div><ProfileImage src="../../assets/images/profilePicture.jpg" userName="João"></ProfileImage></div>
+                    <div>
+                        <ProfileImage 
+                            src="src/assets/images/profilePicture.jpg" 
+                            userName="João" 
+                            size="12">
+                        </ProfileImage>
+                    </div>
                 ) : (
                     <>
                         <div><Link to='/'>Login</Link></div>

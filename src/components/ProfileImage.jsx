@@ -1,7 +1,7 @@
-function ProfileImage({ src, userName }) {
+function ProfileImage({ src, userName, size }) {
     return (
         <>
-            <img src={src} alt={userName}></img>
+            <img src={src} alt={userName} className={`rounded-full h-${size} w-${size}`}></img>
         </>
     )
 }
