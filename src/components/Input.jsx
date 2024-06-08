@@ -30,12 +30,12 @@ function Input({ type, placeholder, icon }) {
 
   return (
     <>
-      <div className="flex gap-2 p-2 rounded w-64 border-2">
+      <div className="flex gap-2 p-2 rounded w-64 border-2 bg-white">
         {setIcon(icon)}
         <input
           type={type}
           placeholder={placeholder}
-          className="text-sm bg-transparent outline-none placeholder:text-gray-900 w-52"
+          className="text-sm outline-none placeholder:text-gray-900 w-52"
         />
       </div>
     </>

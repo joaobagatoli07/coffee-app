@@ -3,19 +3,19 @@ import Logo from '../../assets/icons/Logo'
 import ProfileImage from '../ProfileImage';
 
 function Nav() {
-    const isUserLogged = false;
+    const isUserLogged = true;
 
     return (
         <header className='w-full flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
-            <div className='w-1/5'>
+            <div className='sm:w-1/5'>
                 <Link to='/Home'><Logo width='35' height='51'></Logo></Link>
             </div>
-            <nav className='w-2/5 flex justify-center gap-12'>
+            <nav className='sm:w-2/5 flex justify-center gap-12'>
                 <div><Link to='/Home'>Home</Link></div>
                 <div><Link to='/Carrinho'>Carrinho</Link></div>
                 <div><Link to='/Pedidos'>Pedidos</Link></div>
             </nav>
-            <div className='w-1/5 flex justify-end gap-5'>
+            <div className='sm:w-1/5 flex justify-end gap-5'>
                 {isUserLogged ? (
                     <div>
                         <ProfileImage 

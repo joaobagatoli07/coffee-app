@@ -16,7 +16,7 @@ function MainButton({ text, bgColor }) {
         <>
             <button
                 type="button"
-                className={`${bgColor} text-white p-2 rounded text-lg w-64`}>
+                className={`${bgColor} text-white p-2 rounded text-lg w-64 mt-6`}>
                 {text}
             </button>
         </>
