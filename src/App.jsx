@@ -10,7 +10,7 @@ import Footer from './components/layout/Footer.jsx'
 function App() {
   return (
     <Router>
-      {/* <Nav />
+      <Nav />
       <Footer />
       <Routes>
         <Route path="/" element={<SignIn />}></Route>
@@ -18,10 +18,9 @@ function App() {
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/Carrinho" element={<Cart />}></Route>
         <Route path="/Pedidos" element={<Orders />}></Route>
-      </Routes> */}
-      <SignIn />
+      </Routes>
+      {/* <SignIn /> */}
     </Router>
-    // <SignIn />
   );
 }
 
