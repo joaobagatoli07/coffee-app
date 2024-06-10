@@ -12,8 +12,8 @@ function Nav() {
             </div>
             <nav className='sm:w-2/5 flex justify-center gap-12'>
                 <div><Link to='/'>Home</Link></div>
-                <div><Link to='/Carrinho'>Carrinho</Link></div>
-                <div><Link to='/Pedidos'>Pedidos</Link></div>
+                <div><Link to='/carrinho'>Carrinho</Link></div>
+                <div><Link to='/pedidos'>Pedidos</Link></div>
             </nav>
             <div className='sm:w-1/5 flex justify-end gap-5'>
                 {isUserLogged ? (
@@ -26,8 +26,8 @@ function Nav() {
                     </div>
                 ) : (
                     <>
-                        <div><Link to='/Login'>Login</Link></div>
-                        <div><Link to='/Cadastro'>Cadastre-se</Link></div>
+                        <div><Link to='/login'>Login</Link></div>
+                        <div><Link to='/cadastro'>Cadastre-se</Link></div>
                     </>
                 )}
             </div>
