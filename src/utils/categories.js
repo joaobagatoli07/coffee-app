@@ -1,0 +1,1 @@
+export const categories = ["Quentes", "Gelados", "Alcoólicos", "Especiais", "Descafeinados"];
