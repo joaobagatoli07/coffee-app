@@ -9,7 +9,8 @@ export const items = [
         medium: 4.50,
         large: 5.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1.png'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1.png',
+    category:'Saborizados'
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const items = [
         medium: 4.50,
         large: 6.50
     },
-    image: 'src/assets/images/coffee/Expresso1.png'
+    image: 'src/assets/images/coffee/Expresso1.png',
+    category:'Expresso'
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ export const items = [
         medium: 5.50,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/Café_Americano1.jpg'
+    image: 'src/assets/images/coffee/Café_Americano1.jpg',
+    category:'Tradicionais'
   },
   {
     id: 4,
@@ -45,7 +48,8 @@ export const items = [
         medium: 5.90,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/Café_Latte.jpg'
+    image: 'src/assets/images/coffee/Café_Latte.jpg',
+    category:'Cafés com Leite'
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ export const items = [
         medium: 7.60,
         large: 8.50
     },
-    image: 'src/assets/images/coffee/Cappucino.jpg' 
+    image: 'src/assets/images/coffee/Cappucino.jpg',
+    category:'Cafés com Leite'
   },
   {
     id: 6,
@@ -69,7 +74,8 @@ export const items = [
         medium: 9.50,
         large: 10.90
     },
-    image: 'src/assets/images/coffee/Macchiato1.jpg'
+    image: 'src/assets/images/coffee/Macchiato1.jpg',
+    category:'Cafés com Leite'
   },
   {
     id: 7,
@@ -81,7 +87,8 @@ export const items = [
         medium: 15.50,
         large: 17.50
     },
-    image: 'src/assets/images/coffee/Mocha1.jpg'
+    image: 'src/assets/images/coffee/Mocha1.jpg',
+    category:'Saborizados'
   },
   {
     id: 8,
@@ -93,7 +100,8 @@ export const items = [
         medium: 18.50,
         large: 20.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:''
   },
   {
     id: 9,
@@ -105,7 +113,8 @@ export const items = [
         medium: 15.50,
         large: 17.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:''
   },
   {
     id: 10,
@@ -117,7 +126,8 @@ export const items = [
         medium: 12.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:'Cafés com Leite'
   },
   {
     id: 11,
@@ -129,7 +139,8 @@ export const items = [
         medium: 13.50,
         large: 15.99
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:''
   },
   {
     id: 12,
@@ -141,7 +152,8 @@ export const items = [
         medium: 5.50,
         large: 6.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1' 
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:'Filtrados'
   },
   {
     id: 13,
@@ -153,7 +165,8 @@ export const items = [
         medium: 8.50,
         large: 10.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:'Cafés com Licor'
   },
   {
     id: 14,
@@ -165,7 +178,8 @@ export const items = [
         medium: 13.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:'Especiais'
   },
   {
     id: 15,
@@ -177,6 +191,7 @@ export const items = [
         medium: 8.50,
         large: 12.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1'
+    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    category:'Gelados'
   }
 ];
