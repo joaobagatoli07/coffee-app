@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/icons/Logo'
-import ProfileImage from '../ProfileImage';
+import Logo from '../../assets/icons/Logo.jsx'
+import ProfileImage from '../output/ProfileImage.jsx';
 
 function Nav() {
-    const isUserLogged = true;
+    const isUserLogged = false;
 
     return (
         <header className='w-full flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
@@ -11,7 +11,7 @@ function Nav() {
                 <Link to='/Home'><Logo width='35' height='51'></Logo></Link>
             </div>
             <nav className='sm:w-2/5 flex justify-center gap-12'>
-                <div><Link to='/Home'>Home</Link></div>
+                <div><Link to='/'>Home</Link></div>
                 <div><Link to='/Carrinho'>Carrinho</Link></div>
                 <div><Link to='/Pedidos'>Pedidos</Link></div>
             </nav>
@@ -26,7 +26,7 @@ function Nav() {
                     </div>
                 ) : (
                     <>
-                        <div><Link to='/'>Login</Link></div>
+                        <div><Link to='/Login'>Login</Link></div>
                         <div><Link to='/Cadastro'>Cadastre-se</Link></div>
                     </>
                 )}
