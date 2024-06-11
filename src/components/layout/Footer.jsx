@@ -5,7 +5,7 @@ import Logo from '../../assets/icons/Logo'
 
 function Footer() {
     return (
-        <footer className='flex justify-center items-center w-full pt-4 pb-4 bg-amber-950 text-white text-sm bottom-0'>
+        <footer className='flex justify-center pt-4 pb-4 bg-amber-950 text-white text-sm'>
             <div className='flex justify-between w-4/5'>
                 <div>
                     <Logo width='35' height='51'></Logo>

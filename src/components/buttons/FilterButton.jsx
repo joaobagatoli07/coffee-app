@@ -1,7 +1,9 @@
-function FilterButton({ text, color }) {
+function FilterButton({ text }) {
     return (
         <>
-            <button className={`${color} text-xs rounded-md w-36 text-white h-8`}>{text}</button>
+            <div>
+                <button className={`bg-gray-300 text-xs rounded-md w-36 text-black h-8`}>{text}</button>
+            </div>
         </>
     );
 }

@@ -6,7 +6,7 @@ function Nav() {
     const isUserLogged = false;
 
     return (
-        <header className='w-full flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
+        <header className='flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
             <div className='sm:w-1/5'>
                 <Link to='/Home'><Logo width='35' height='51'></Logo></Link>
             </div>
