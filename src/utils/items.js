@@ -9,12 +9,11 @@ export const items = [
         medium: 4.50,
         large: 5.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1.png',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1.png',
     category:'Saborizados'
   },
   {
     id: 2,
-    title: 'Espresso',
     subtitle: 'O clássico dos clássicos!',
     description: 'Um shot de café concentrado que desperta seus sentidos. Experimente-o na sua forma mais pura.',
     prices: {
@@ -22,7 +21,7 @@ export const items = [
         medium: 4.50,
         large: 6.50
     },
-    image: 'src/assets/images/coffee/Expresso1.png',
+    image: 'src/assets/images/coffee/product/Expresso1.png',
     category:'Expresso'
   },
   {
@@ -35,7 +34,7 @@ export const items = [
         medium: 5.50,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/Café_Americano1.jpg',
+    image: 'src/assets/images/coffee/product/Café_Americano1.jpg',
     category:'Tradicionais'
   },
   {
@@ -48,7 +47,7 @@ export const items = [
         medium: 5.90,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/Café_Latte.jpg',
+    image: 'src/assets/images/coffee/product/Café_Latte.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -61,7 +60,7 @@ export const items = [
         medium: 7.60,
         large: 8.50
     },
-    image: 'src/assets/images/coffee/Cappucino.jpg',
+    image: 'src/assets/images/coffee/product/Cappucino.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -74,7 +73,7 @@ export const items = [
         medium: 9.50,
         large: 10.90
     },
-    image: 'src/assets/images/coffee/Macchiato1.jpg',
+    image: 'src/assets/images/coffee/product/Macchiato1.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -87,7 +86,7 @@ export const items = [
         medium: 15.50,
         large: 17.50
     },
-    image: 'src/assets/images/coffee/Mocha1.jpg',
+    image: 'src/assets/images/coffee/product/Mocha1.jpg',
     category:'Saborizados'
   },
   {
@@ -100,7 +99,7 @@ export const items = [
         medium: 18.50,
         large: 20.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:''
   },
   {
@@ -113,7 +112,7 @@ export const items = [
         medium: 15.50,
         large: 17.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:''
   },
   {
@@ -126,7 +125,7 @@ export const items = [
         medium: 12.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:'Cafés com Leite'
   },
   {
@@ -139,20 +138,20 @@ export const items = [
         medium: 13.50,
         large: 15.99
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:''
   },
   {
     id: 12,
     title: 'Café Turco',
-    subtitle: 'RUma viagem sensorial única!co espramelo',
+    subtitle: 'Uma viagem sensorial única!co espramelo',
     description: 'Café forte e aromático, preparado de maneira tradicional, garantindo uma experiência intensa e memorável.',
     prices: {
         small: 4.60,
         medium: 5.50,
         large: 6.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:'Filtrados'
   },
   {
@@ -165,7 +164,7 @@ export const items = [
         medium: 8.50,
         large: 10.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:'Cafés com Licor'
   },
   {
@@ -178,7 +177,7 @@ export const items = [
         medium: 13.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:'Especiais'
   },
   {
@@ -191,7 +190,7 @@ export const items = [
         medium: 8.50,
         large: 12.50
     },
-    image: 'src/assets/images/coffee/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
     category:'Gelados'
   }
 ];
