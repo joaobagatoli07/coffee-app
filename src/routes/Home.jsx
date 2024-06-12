@@ -7,7 +7,7 @@ import { items } from "../utils/items.js";
 function Home() {
   return (
     <>
-      <main className="h-screen">
+      <main>
         <section className="flex justify-center my-10">
           <SearchField />
         </section>
@@ -21,7 +21,7 @@ function Home() {
             ))}
           </section>
         </div>
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center my-10">
           <section className="flex justify-center flex-wrap gap-8 w-4/5">
             {items.map((item, index) => (
               <CoffeeInfo
