@@ -14,6 +14,7 @@ export const items = [
   },
   {
     id: 2,
+    title: 'Expresso',
     subtitle: 'O clássico dos clássicos!',
     description: 'Um shot de café concentrado que desperta seus sentidos. Experimente-o na sua forma mais pura.',
     prices: {
@@ -34,7 +35,7 @@ export const items = [
         medium: 5.50,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/product/Café_Americano1.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_Americano1.jpg',
     category:'Tradicionais'
   },
   {
@@ -47,7 +48,7 @@ export const items = [
         medium: 5.90,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/product/Café_Latte.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_Latte1.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -60,7 +61,7 @@ export const items = [
         medium: 7.60,
         large: 8.50
     },
-    image: 'src/assets/images/coffee/product/Cappucino.jpg',
+    image: 'src/assets/images/coffee/product/Cappuccino1.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -99,7 +100,7 @@ export const items = [
         medium: 18.50,
         large: 20.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Affogato1.jpg',
     category:''
   },
   {
@@ -112,7 +113,7 @@ export const items = [
         medium: 15.50,
         large: 17.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Cafe_Frappe1.jpg',
     category:''
   },
   {
@@ -125,7 +126,7 @@ export const items = [
         medium: 12.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Flat_White1.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -138,7 +139,7 @@ export const items = [
         medium: 13.50,
         large: 15.99
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Cafe_Viennese1.jpg',
     category:''
   },
   {
@@ -151,7 +152,7 @@ export const items = [
         medium: 5.50,
         large: 6.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Cafe_Turco1.jpg',
     category:'Filtrados'
   },
   {
@@ -164,7 +165,7 @@ export const items = [
         medium: 8.50,
         large: 10.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Cafe_com_Rum1.jpg',
     category:'Cafés com Licor'
   },
   {
@@ -177,7 +178,7 @@ export const items = [
         medium: 13.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Cafe_Irlandes1.jpg',
     category:'Especiais'
   },
   {
@@ -190,7 +191,7 @@ export const items = [
         medium: 8.50,
         large: 12.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1',
+    image: 'src/assets/images/coffee/product/Cafe_Gelado1.jpg',
     category:'Gelados'
   }
 ];
