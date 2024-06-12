@@ -9,7 +9,7 @@ export const items = [
         medium: 4.50,
         large: 5.50
     },
-    image: 'src/assets/images/coffee/product/Caramel_Macchiato1.png',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato2.png',
     category:'Saborizados'
   },
   {
@@ -22,7 +22,7 @@ export const items = [
         medium: 4.50,
         large: 6.50
     },
-    image: 'src/assets/images/coffee/product/Expresso1.png',
+    image: 'src/assets/images/coffee/product/Expresso3.png',
     category:'Expresso'
   },
   {
@@ -48,7 +48,7 @@ export const items = [
         medium: 5.90,
         large: 7.50
     },
-    image: 'src/assets/images/coffee/product/Cafe_Latte1.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_Latte3.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -74,7 +74,7 @@ export const items = [
         medium: 9.50,
         large: 10.90
     },
-    image: 'src/assets/images/coffee/product/Macchiato1.jpg',
+    image: 'src/assets/images/coffee/product/Macchiato2.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -113,7 +113,7 @@ export const items = [
         medium: 15.50,
         large: 17.50
     },
-    image: 'src/assets/images/coffee/product/Cafe_Frappe1.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_Frappe4.jpg',
     category:''
   },
   {
@@ -126,7 +126,7 @@ export const items = [
         medium: 12.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/product/Flat_White1.jpg',
+    image: 'src/assets/images/coffee/product/Flat_White4.jpg',
     category:'Cafés com Leite'
   },
   {
@@ -139,7 +139,7 @@ export const items = [
         medium: 13.50,
         large: 15.99
     },
-    image: 'src/assets/images/coffee/product/Cafe_Viennese1.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_Viennese2.jpg',
     category:''
   },
   {
@@ -165,7 +165,7 @@ export const items = [
         medium: 8.50,
         large: 10.50
     },
-    image: 'src/assets/images/coffee/product/Cafe_com_Rum1.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_com_Rum4.jpg',
     category:'Cafés com Licor'
   },
   {
@@ -178,7 +178,7 @@ export const items = [
         medium: 13.50,
         large: 16.50
     },
-    image: 'src/assets/images/coffee/product/Cafe_Irlandes1.jpg',
+    image: 'src/assets/images/coffee/product/Cafe_Irlandes3.jpg',
     category:'Especiais'
   },
   {
