@@ -2,7 +2,7 @@ import PlusButton from "../buttons/PlusButton";
 
 function CoffeeInfo({ imgSrc, title, subtitle, price }) {
   return (
-      <div className="h-52 w-40 shadow-md rounded-md">
+      <div className="h-52 w-40 shadow-lg rounded-lg border border-solid border-slate-300">
         <div className="h-2/4">
           <img src={imgSrc} className="h-full w-full rounded" alt={title}  />
         </div>
