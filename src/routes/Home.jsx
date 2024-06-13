@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchField from "../components/inputs/SearchField.jsx";
 import FilterButton from "../components/buttons/FilterButton.jsx";
 import CoffeeInfo from "../components/cards/CoffeeInfo.jsx";
+import ItemNotFound from "./ItemNotFound.jsx";
 import { categories } from "../utils/categories.js";
 import { items } from "../utils/items.js";
 
@@ -16,6 +17,10 @@ function Home() {
   }
 
   function renderCoffees(coffees) {
+    if (coffees.length === 0) {
+      return <ItemNotFound />
+    }
+    
     return coffees.map((item, index) => (
       <CoffeeInfo
       imgSrc={item.image}
