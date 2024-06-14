@@ -8,7 +8,7 @@ function Nav() {
     return (
         <header className='flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
             <div className='sm:w-1/5'>
-                <Link to='/Home'><Logo width='35' height='51'></Logo></Link>
+                <Link to='/'><Logo width='35' height='51'></Logo></Link>
             </div>
             <nav className='sm:w-2/5 flex justify-center gap-12'>
                 <div><Link to='/'>Home</Link></div>

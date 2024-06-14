@@ -6,37 +6,43 @@ import ItemNotFound from "./ItemNotFound.jsx";
 import { categories } from "../utils/categories.js";
 import { items } from "../utils/items.js";
 
-
 function Home() {
-
   const [coffees, setCoffees] = useState(items);
 
-  function filterCoffeesByCategory(value) {
-    const filteredCoffees = items.filter(item => item.category === value);
-    setCoffees(filteredCoffees);
+  function filterCoffeesBySearch(search) {
+    const coffeesBySearch = items.filter((item) =>
+      item.title.toLowerCase().includes(search.toLowerCase()));
+    setCoffees(coffeesBySearch);
+  }
+
+  function filterCoffeesByCategory(category) {
+    const coffeesByCategory = items.filter((item) => item.category === category);
+    setCoffees(coffeesByCategory);
   }
 
   function renderCoffees(coffees) {
     if (coffees.length === 0) {
-      return <ItemNotFound />
+      return <ItemNotFound />;
     }
-    
+
     return coffees.map((item, index) => (
       <CoffeeInfo
-      imgSrc={item.image}
-      title={item.title}
-      subtitle={item.subtitle}
-      price={item.prices.small}
-      key={index}
-    />
-    ));   
+        imgSrc={item.image}
+        title={item.title}
+        subtitle={item.subtitle}
+        price={item.prices.small}
+        key={index}
+      />
+    ));
   }
 
   return (
     <>
       <main>
         <section className="flex justify-center my-10">
-          <SearchField />
+          <SearchField
+            onChange={(e) => filterCoffeesBySearch(e)}
+          />
         </section>
         <div className="flex justify-center">
           <section className="flex justify-center flex-wrap gap-2 w-4/5">
