@@ -4,7 +4,7 @@ function PlusButton(){
     return (
         <>
             <button>
-                <CirclePlus />
+                <CirclePlus className="stroke-amber-950"/>
             </button>
         </>
     )
