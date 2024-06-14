@@ -1,13 +1,6 @@
 function CoffeeDetails() { 
     return (
-
-        <>
-        <div className="w-20 h-20 flex bg-lime-600 ">
-    
-        
-        </div>
-    </>
-       
+       <h1>Coffee Details</h1>
     )
 }       
 

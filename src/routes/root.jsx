@@ -7,6 +7,9 @@ import Feedback from "./Feedback.jsx";
 import SignIn from "./SignIn.jsx";
 import SignUp from "./SignUp.jsx";
 import Error from "./Error.jsx";
+import Coffee from "./Coffee.jsx";
+
+const userLogged = true;
 
 const router = createBrowserRouter([
     {
@@ -38,6 +41,10 @@ const router = createBrowserRouter([
           path: "/retorno",
           element: <Feedback />,
         },
+        {
+          path: "/produto",
+          element: userLogged ? <Coffee /> : <Feedback />,
+        }
       ],
     },
   ]);
