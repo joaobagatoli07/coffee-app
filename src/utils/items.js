@@ -1,3 +1,14 @@
+// Simulação de uma resposta de uma requisição GET a uma API de cafés
+// 
+// id - informa o id do produto 
+// title - informa o titulo do produto 
+// subtitle -  informa o subtitulo do produto 
+// description - informa a descrição do produto 
+// prices -  informa o preço do produto 
+// image - informa a imagens do produto 
+// category - informa a categoria do produto 
+// 
+
 export const items = [
   {
     id: 1,
@@ -145,7 +156,7 @@ export const items = [
   {
     id: 12,
     title: 'Café Turco',
-    subtitle: 'Uma viagem sensorial única!co espramelo',
+    subtitle: 'Sabor e Tradição em Cada Gole',
     description: 'Café forte e aromático, preparado de maneira tradicional, garantindo uma experiência intensa e memorável.',
     prices: {
         small: 4.60,
