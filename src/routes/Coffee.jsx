@@ -1,17 +1,18 @@
 import { useLocation } from "react-router-dom"
 import CoffeeDetails from "../components/cards/CoffeeDetails";
 
-function Coffee(){
+function Coffee() {
     const location = useLocation();
     const { imgSrc, title, subtitle, price } = location.state || {};
 
     return (
         <>
-        <h1>{title}</h1>
-        <CoffeeDetails imgSrc="src/assets/images/coffee/product/Caramel_Macchiato4.png" />
+            <main className="bg-blue-100 h-screen w-screen">
+
+            </main>
         </>
-        
-        
+
+
     )
 }
 
