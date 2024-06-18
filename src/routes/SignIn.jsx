@@ -12,7 +12,6 @@ function SignIn() {
       title="Login"
       subtitle="Olá, seja bem vindo de volta"
       buttonText="Entrar"
-      redirecTo="/"
       linkText="Criar uma conta"
       linkPath="/cadastro">
       <Input type="text" placeholder="Usuário" icon="user" onChange={setUser}  />

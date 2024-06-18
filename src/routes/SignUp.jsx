@@ -7,7 +7,6 @@ function SignUp() {
             img="src/assets/images/coffee/pages/signInImage.jpg" 
             title="Cadastro"
             buttonText="Cadastrar"
-            redirecTo="/"
             linkText="Já possuo uma conta"
             linkPath="/login"
             >

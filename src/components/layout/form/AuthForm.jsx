@@ -2,11 +2,11 @@ import MainButton from "../../buttons/MainButton.jsx";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-function AuthForm({ img, title, subtitle, children, buttonText, redirecTo, linkText, linkPath }) {
+function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPath }) {
   const navigate = useNavigate();
 
-  function redirectToPage() {
-    navigate({ redirecTo });
+  function redirectToHomePage() {
+    navigate('/');
   }
 
   return (
@@ -31,7 +31,7 @@ function AuthForm({ img, title, subtitle, children, buttonText, redirecTo, linkT
             <div className="flex flex-col gap-3">
               {children}
             </div>
-            <MainButton text={buttonText} bgColor="bg-amber-600" onClick={redirectToPage} />
+            <MainButton text={buttonText} bgColor="bg-amber-600" onClick={redirectToHomePage} />
           </form>
           <span className="mt-2 text-sm text-white">
             <Link to={linkPath}>{linkText}</Link>
