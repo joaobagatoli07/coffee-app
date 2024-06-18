@@ -1,5 +1,10 @@
+import CoffeSizes from "../components/cards/CoffeSizes"
+
 function Cart(){
-    return <h1>Cart</h1>
+    return (
+    <CoffeSizes />
+    )
 }
+
 
 export default Cart
