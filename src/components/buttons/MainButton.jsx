@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 /**
  * Botão principal da aplicação.
@@ -9,14 +9,16 @@ import PropTypes from 'prop-types'
  * 
  * @param {string} props.bgColor - Cor do botão.
  * @param {string} props.text - Texto que será exibido dentro do botão.
+ * @param {string} props.onClick - Função atrelada ao clique do botão.
  */
 
-function MainButton({ text, bgColor }) {
+function MainButton({ text, bgColor, onClick }) {
     return (
         <>
             <button
                 type="button"
-                className={`${bgColor} text-white p-2 rounded text-lg w-64 mt-6`}>
+                className={`${bgColor} text-white p-2 rounded text-lg w-64 mt-6`}
+                onClick={onClick}>
                 {text}
             </button>
         </>
@@ -24,8 +26,9 @@ function MainButton({ text, bgColor }) {
 }
 
 MainButton.propTypes = {
-    bgColor: PropTypes.string,
-    text: PropTypes.string.isRequired
+    bgColor: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    onClick: PropTypes.func
 }
 
 export default MainButton

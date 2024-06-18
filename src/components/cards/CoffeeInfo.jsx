@@ -17,7 +17,7 @@ function CoffeeInfo({ imgSrc, title, subtitle, price }) {
         </div>
         <div className="h-2/4 p-2">
           <div className="h-4/6">
-            <div className="text-sm font-semibold">{title}</div>
+            <div className="text-sm text-amber-900 font-semibold">{title}</div>
             <div className="text-xs">{subtitle}</div>
           </div>
           <div className="h-2/6 flex justify-between">
