@@ -1,5 +1,5 @@
 import Input from "../components/inputs/Input.jsx";
-import AuthForm from "../components/layout/AuthForm.jsx";
+import AuthForm from "../components/layout/form/AuthForm.jsx";
 
 function SignUp() {
     return (

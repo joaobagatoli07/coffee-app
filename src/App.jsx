@@ -1,13 +1,17 @@
 import Nav from "./components/layout/Nav.jsx";
 import Footer from "./components/layout/Footer.jsx";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
+  const hideNavAndFooterRoutes = ['/login', '/cadastro'];
+  const shouldShowNavAndFooter = hideNavAndFooterRoutes.includes(location.pathname);
+  
   return (
     <>
-      <Nav />
+      { !shouldShowNavAndFooter && <Nav />}
       <Outlet />
-      <Footer />
+      { !shouldShowNavAndFooter && <Footer />}
     </>
   );
 }

@@ -1,4 +1,4 @@
-import MainButton from "../buttons/MainButton.jsx";
+import MainButton from "../../buttons/MainButton.jsx";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
