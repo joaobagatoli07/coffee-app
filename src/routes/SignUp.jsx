@@ -4,7 +4,7 @@ import AuthForm from "../components/layout/form/AuthForm.jsx";
 function SignUp() {
     return (
         <AuthForm
-            img="src/assets/images/coffee/pages/signInImage.jpg" 
+            img="src/assets/images/coffee/pages/signUpImage.jpg" 
             title="Cadastro"
             buttonText="Cadastrar"
             linkText="Já possuo uma conta"

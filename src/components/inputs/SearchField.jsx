@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 
 function SearchField({ onChange }) {
   return (
-    <div className="flex p-3 pl-5 bg-slate-200 gap-2 w-[400px] rounded-xl">
+    <div className="flex p-3 pl-5 border border-amber-950 gap-2 w-[400px] rounded-xl">
       <Search></Search>
       <input
         type="text"
