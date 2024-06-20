@@ -1,8 +1,13 @@
-import CoffeSizes from "../components/cards/CoffeSizes"
+import Notification from "../components/toast/Notification"
 
 function Cart(){
     return (
-    <CoffeSizes />
+        <div className="flex flex-col gap-5 p-6">
+          <Notification type={'Info'} description={'Você pode ser legal.'} />  
+          <Notification type={'Error'} description={'Você não é legal.'} />  
+          <Notification type={'Success'} description={'Você é legal.'} />  
+          <Notification type={'Warning'} description={'Você talvez seja legal.'} />  
+        </div>
     )
 }
 
