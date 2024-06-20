@@ -6,4 +6,4 @@ function ProfileImage({ src, userName, size }) {
     )
 }
 
-export default ProfileImage
+export default ProfileImage;
