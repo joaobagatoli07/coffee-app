@@ -8,7 +8,7 @@ function Notification({ type, description }) {
     if (typeNotification == 'Error') {
         return (
             <div className="flex items-center gap-5 w-[400px] h-[80px] pl-5 border-l-[10px] border-red-500 rounded-lg shadow-lg">
-                <AlertTriangle className="stroke-red-500" />
+                <XCircle  className="stroke-red-500" />
                 <div>
                     <p className="text-lg font-semibold">Erro</p>
                     <p className="text-gray-400">{description}</p>
@@ -38,7 +38,7 @@ function Notification({ type, description }) {
     } else if (typeNotification == 'Warning') {
         return (
             <div className="flex items-center gap-5 w-[400px] h-[80px] pl-5 border-l-[10px] border-orange-500 rounded-lg shadow-lg">
-                <XCircle className="stroke-orange-500" />
+                <AlertTriangle className="stroke-orange-500" />
                 <div>
                     <p className="text-lg font-semibold">Aviso</p>
                     <p className="text-gray-400">{description}</p>
