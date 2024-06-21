@@ -1,5 +1,5 @@
-import ProfileImage from "../components/output/ProfileImage";
-import Notification from "../components/toast/Notification";
+import ProfileImage from "../components/display/ProfileImage";
+import Notification from "../components/display/Notification";
 
 function Cart() {
   return (
