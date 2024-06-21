@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/icons/Logo.jsx'
-import ProfileImage from '../output/ProfileImage.jsx';
+import ProfileImage from '../display/ProfileImage.jsx';
 
 function Nav() {
     const isUserLogged = false;
