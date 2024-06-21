@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 import SearchField from "../components/inputs/SearchField.jsx";
 import FilterButton from "../components/buttons/FilterButton.jsx";
 import CoffeeInfo from "../components/cards/CoffeeInfo.jsx";
@@ -8,6 +9,7 @@ import { items } from "../utils/items.js";
 
 function Home() {
   const [coffees, setCoffees] = useState(items);
+  const { homeRef } = useOutletContext();
 
   function filterCoffeesBySearch(search) {
     const coffeesBySearch = items.filter((item) =>
@@ -35,6 +37,12 @@ function Home() {
       />
     ));
   }
+
+  useEffect(() => {
+    if (homeRef) {
+      homeRef.current = { resetCoffees: () => setCoffees(items) };
+    }
+  }, [homeRef]);
 
   return (
     <>
