@@ -1,5 +1,9 @@
+import SelectButton from '../components/buttons/SelectButton.jsx'
+
 function Orders(){
-    return <h2>Orders</h2>
+    return(   
+        <SelectButton/>
+    )    
 }
 
 export default Orders
