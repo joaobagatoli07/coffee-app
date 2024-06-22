@@ -1,10 +1,11 @@
-import { useLocation } from "react-router-dom"
-import CoffeeDetails from "../components/cards/CoffeeDetails";
+import { useLocation } from "react-router-dom";
+import { items } from "../utils/items";
 import { Heart } from "lucide-react";
 
 function Coffee() {
     const location = useLocation();
     const { title } = location.state || {};
+    const coffee = items.find(coffee => coffee.title == title)
 
     return (
         <>

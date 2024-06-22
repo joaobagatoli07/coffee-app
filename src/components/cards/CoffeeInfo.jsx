@@ -6,7 +6,7 @@ function CoffeeInfo({ imgSrc, title, subtitle, price }) {
 
   function navigateToProductPage() {
     navigate("/produto", {
-      state: { imgSrc, title, subtitle, price }
+      state: { title }
     });
   }
 
