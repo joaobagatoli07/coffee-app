@@ -14,8 +14,8 @@ function SignIn() {
       buttonText="Entrar"
       linkText="Criar uma conta"
       linkPath="/cadastro">
-      <Input type="text" placeholder="Usuário" icon="user" onChange={setUser}  />
-      <Input type="password" placeholder="Senha" icon="lock" onChange={setPassword} />
+      <Input type="text" placeholder="Usuário" name="user" icon="user" onChange={setUser}  />
+      <Input type="password" placeholder="Senha" name="password" icon="lock" onChange={setPassword} />
     </AuthForm>
   );
 }

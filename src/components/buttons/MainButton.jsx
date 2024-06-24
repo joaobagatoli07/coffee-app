@@ -7,12 +7,13 @@ import PropTypes from 'prop-types';
  * @example
  * <MainButton text="Entrar" color="bg-amber-800"></MainButton>
  * 
- * @param {string} props.bgColor - Cor do botão.
  * @param {string} props.text - Texto que será exibido dentro do botão.
+ * @param {string} props.text - Texto que será exibido dentro do botão.
+ * @param {string} props.bgColor - Cor do botão.
  * @param {string} props.onClick - Função atrelada ao clique do botão.
  */
 
-function MainButton({ text, bgColor, onClick }) {
+function MainButton({ text, type, bgColor, onClick }) {
     return (
         <>
             <button
@@ -26,8 +27,9 @@ function MainButton({ text, bgColor, onClick }) {
 }
 
 MainButton.propTypes = {
-    bgColor: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    bgColor: PropTypes.string.isRequired,
     onClick: PropTypes.func
 }
 
