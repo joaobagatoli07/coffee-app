@@ -1,11 +1,22 @@
 import MainButton from "../../buttons/MainButton.jsx";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPath }) {
   const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit: onSubmit,
+    watch,
+    formState: { errors },
+  } = useForm()
 
-  function redirectToHomePage() {
+  const handleSubmit = (data) => {
+    console.log(data);
+  }
+
+  const redirectToHomePage = () => {
     navigate('/');
   }
 
@@ -27,7 +38,7 @@ function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPa
             </span>
           )
           }
-          <form>
+          <form onSubmit={onSubmit(handleSubmit)}>
             <div className="flex flex-col gap-3">
               {children}
             </div>
