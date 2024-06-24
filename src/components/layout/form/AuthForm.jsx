@@ -37,7 +37,7 @@ function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPa
               <div className="flex flex-col gap-3">
                 {children}
               </div>
-              <MainButton text={buttonText} bgColor="bg-amber-600" />
+              <MainButton text={buttonText} type="submit" bgColor="bg-amber-600" />
             </form>
             <span className="mt-2 text-sm text-white">
               <Link to={linkPath}>{linkText}</Link>
