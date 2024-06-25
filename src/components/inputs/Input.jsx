@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { UserRound, Phone, LockKeyhole } from "lucide-react";
+import { useFormContext } from "react-hook-form";
 
 /**
  * Componente de entrada de dados.
@@ -11,11 +12,14 @@ import { UserRound, Phone, LockKeyhole } from "lucide-react";
  * @param {Object} props - Propriedades do componente.
  * @param {string} props.type - Tipo de entrada ('text', 'password', 'tel').
  * @param {string} props.placeholder - Texto que será exibido dentro do input.
+ * @param {string} props.name - Atributo name da tag input.
  * @param {string} props.icon - Ícone que será exibido dentro do input ('user', 'phone', 'lock').
  * @param {string} props.onChange - Função atrelada a mudança do value do input.
  */
 
-function Input({ type, placeholder, icon, onChange }) {
+function Input({ type, placeholder, name, icon, onChange }) {
+  const { register } = useFormContext();
+
   const setIcon = icon => {
     switch (icon.toLowerCase()) {
       case "user":
@@ -25,7 +29,7 @@ function Input({ type, placeholder, icon, onChange }) {
       case "lock":
         return <LockKeyhole></LockKeyhole>;
       default:
-        return '';
+        return;
     }
   };
 
@@ -38,6 +42,7 @@ function Input({ type, placeholder, icon, onChange }) {
           placeholder={placeholder}
           className="text-sm outline-none placeholder:text-gray-900 w-52"
           onChange={(e) => onChange(e.target.value)}
+          {...register(name)}
         />
       </div>
     </>
@@ -47,6 +52,7 @@ function Input({ type, placeholder, icon, onChange }) {
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   icon: PropTypes.string,
   onChange: PropTypes.func
 };

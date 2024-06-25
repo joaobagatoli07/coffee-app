@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 function App() {
   const location = useLocation();
-  const hideNavAndFooterRoutes = ['/login', '/cadastro'];
+  const hideNavAndFooterRoutes = ['/login', '/cadastro', '/retorno'];
   const shouldShowNavAndFooter = hideNavAndFooterRoutes.includes(location.pathname);
   const homeRef = useRef();
 
