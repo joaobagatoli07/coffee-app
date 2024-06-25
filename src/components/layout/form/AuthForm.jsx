@@ -1,10 +1,17 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useFormContext } from "react-hook-form";
 import { useForm, FormProvider } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import MainButton from "../../buttons/MainButton.jsx";
+import { SignInSchema } from "../../form/schema/SignInSchema.jsx";
 
 function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPath }) {
   // const navigate = useNavigate();
-  const methods = useForm();
+  const methods = useForm({
+    resolver: yupResolver(SignInSchema),
+  });
+
+  const { register, formState: { errors } } = useFormContext();
 
   const onSubmit = (data) => {
     console.log(data);

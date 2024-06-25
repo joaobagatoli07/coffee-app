@@ -18,7 +18,7 @@ import { useFormContext } from "react-hook-form";
  */
 
 function Input({ type, placeholder, name, icon, onChange }) {
-  const { register, formState: { errors } } = useFormContext();
+  const { register } = useFormContext();
 
   const setIcon = icon => {
     switch (icon.toLowerCase()) {
@@ -45,7 +45,6 @@ function Input({ type, placeholder, name, icon, onChange }) {
           {...register(name)}
         />
       </div>
-      {errors[name] && <span className="text-red-600">{errors[name].message}</span>}
     </>
   );
 }
