@@ -22,8 +22,8 @@ function CoffeeInfo({ imgSrc, title, subtitle, price }) {
           </div>
           <div className="h-2/6 flex justify-between">
             <div className="text-sm font-semibold">{`R$${price}`}</div>
-            <div onClick={navigateToProductPage}>
-              <PlusButton />
+            <div onClick={navigateToProductPage} className="hover:text-white hover:bg-brown-500 rounded"  >
+              <PlusButton/>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import ProfileImage from "../components/display/ProfileImage";
 import Notification from "../components/display/Notification";
 import CoffeePrice from "../components/cards/CoffeePrice";
+import CoffeeResume from "../components/cards/CoffeeResume";
 
 function Cart() {
   return (
@@ -10,7 +11,7 @@ function Cart() {
       <Notification type={'Success'} description={'Você é legal.'} />
       <Notification type={'Warning'} description={'Você talvez seja legal.'} />
       <ProfileImage idProfile={3} size={'100px'} />
-      <CoffeePrice></CoffeePrice>
+      <CoffeeResume/>
       
 
     </div>
