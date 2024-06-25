@@ -1,6 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { items } from "../utils/items";
 import { Heart } from "lucide-react";
+import {CoffeePrice} from "../components/cards/CoffeePrice";
 
 function Coffee() {
     const location = useLocation();
@@ -21,23 +22,27 @@ function Coffee() {
                     </section>
                     <section className="flex mt-10 h-96">
                         <div className="flex w-3/5 items-center justify-center ">
-                            <div className="flex w-11/12 h-5/6 rounded-lg border-solid border-gray-800 shadow-[_10px_10px_15px_rgba(0,0,0,0.1)]">
-
-                            </div>                                                                                              
-
-
-                            {/* <div class="flex h-52 w-96 shadow-lg rounded-lg border border-solid border-slate-300 --- drop-shadow-md border-solid">
-                                <div class="flex justify-center w-2/5" >
-                                    <img src={imgSrc} className="flex h-32 w-62 justify-center mt-6 rounded-lg" alt={title} />
+                            <div className="flex w-11/12 h-5/6 rounded-lg border-solid bg-zinc-100 border-gray-800 shadow-[_10px_10px_15px_rgba(0,0,0,0.1)]">
+                                <div className="flex w-2/4 items-center justify-center" >
+                                    <div className="flex w-11/12 h-3/6 rounded-lg bg-green-300">
+                                        <img src="" alt="" />
+                                    </div>
                                 </div>
-                                <div className="w-3/5 ">
+                                <div className="flex w-2/4 items-center justify-center">
+                                    <div className="flex-row w-11/12 h-5/6 rounded-lg">
+                                        <div className="flex w-full h-1/4 bg-blue-200">
 
+                                        </div>
+                                        <div className="flex w-full h-3/4 bg-blue-300">
+
+                                        </div>
+                                    </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                         <div className="flex w-2/5 items-center justify-center">
-                            <div className="flex w-11/12 h-5/6 rounded-lg shadow-[_10px_10px_25px_rgba(0,0,0,0.1)] border-solid border-slate-200">
-
+                            <div className="flex w-11/12 h-5/6 bg-zinc-100 rounded-lg shadow-[_10px_10px_25px_rgba(0,0,0,0.1)] border-solid border-slate-200">
+                                <CoffeePrice></CoffeePrice>
                             </div>
                         </div>
                     </section>
