@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { items } from "../utils/items";
+import { items } from "../data/items";
 import { Heart } from "lucide-react";
 // import {CoffeePrice} from "../components/cards/CoffeePrice";
 

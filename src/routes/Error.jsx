@@ -20,7 +20,7 @@ function Error() {
         <p>Opss... Algo deu errado</p>
       </div>
       <div>
-        <MainButton bgColor='bg-amber-950' text='Retornar a tela inicial' onClick={redirectToHome} />
+        <MainButton bgColor='bg-amber-950' type='button' text='Retornar a tela inicial' onClick={redirectToHome} />
       </div>
     </div>
   )

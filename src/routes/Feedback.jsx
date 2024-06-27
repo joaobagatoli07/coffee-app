@@ -11,8 +11,9 @@ function Feedback() {
           com sucesso
         </p>
         <MainButton
-          text={"Retornar a tela inicial"}
-          bgColor={"bg-amber-950"}
+          text="Retornar a tela inicial"
+          type="button"
+          bgColor="bg-amber-950"
         ></MainButton>
       </div>
     </div>

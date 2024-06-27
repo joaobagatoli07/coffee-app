@@ -1,17 +1,25 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useFormContext } from "react-hook-form";
 import { useForm, FormProvider } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { SignInSchema } from "../../../utils/SignInSchema.js";
+import { SignUpSchema } from "../../../utils/SignUpSchema.js";
 import MainButton from "../../buttons/MainButton.jsx";
-import { SignInSchema } from "../../form/schema/SignInSchema.jsx";
 
 function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPath }) {
   // const navigate = useNavigate();
-  const methods = useForm({
-    resolver: yupResolver(SignInSchema),
-  });
+  let schema;
 
-  const { register, formState: { errors } } = useFormContext();
+  if (title === 'Login') {
+    schema = SignInSchema;
+  }
+  
+  if (title === 'Cadastro') {
+    schema = SignUpSchema;
+  }
+  
+  const methods = useForm({
+    resolver: yupResolver(schema),
+  });
 
   const onSubmit = (data) => {
     console.log(data);
@@ -38,8 +46,7 @@ function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPa
               <span className="text-lg mb-4 text-white">
                 {subtitle}
               </span>
-            )
-            }
+            )}
             <form onSubmit={methods.handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-3">
                 {children}

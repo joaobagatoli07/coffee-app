@@ -41,7 +41,7 @@ function Input({ type, placeholder, name, icon, onChange }) {
           type={type}
           placeholder={placeholder}
           className="text-sm outline-none placeholder:text-gray-900 w-52"
-          onChange={(e) => onChange(e.target.value)}
+          onChange={(e) => onChange && onChange(e.target.value)}
           {...register(name)}
         />
       </div>
@@ -52,7 +52,7 @@ function Input({ type, placeholder, name, icon, onChange }) {
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   icon: PropTypes.string,
   onChange: PropTypes.func
 };
