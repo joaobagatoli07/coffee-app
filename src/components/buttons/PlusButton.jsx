@@ -1,6 +1,6 @@
 import { CirclePlus } from "lucide-react"
 
-function PlusButton(){
+function PlusButton( ){
     return (
         <>
             <button>

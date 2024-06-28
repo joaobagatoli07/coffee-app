@@ -8,11 +8,10 @@ function SignUp() {
             title="Cadastro"
             buttonText="Cadastrar"
             linkText="Já possuo uma conta"
-            linkPath="/login"
-            >
-            <Input type="text" placeholder="Nome" icon="user" />
-            <Input type="tel" placeholder="Telefone" icon="phone" />
-            <Input type="password" placeholder="Senha" icon="lock" />
+            linkPath="/login">
+            <Input type="text" placeholder="Nome" name="name" icon="user" />
+            <Input type="tel" placeholder="Telefone" name="phone" icon="phone" />
+            <Input type="password" placeholder="Senha" name="password" icon="lock" />
             <Input type="password" placeholder="Confirme sua senha" icon="lock" />
         </AuthForm>
     );

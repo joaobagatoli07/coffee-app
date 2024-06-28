@@ -4,8 +4,8 @@ import SearchField from "../components/inputs/SearchField.jsx";
 import FilterButton from "../components/buttons/FilterButton.jsx";
 import CoffeeInfo from "../components/cards/CoffeeInfo.jsx";
 import ItemNotFound from "./ItemNotFound.jsx";
-import { categories } from "../utils/categories.js";
-import { items } from "../utils/items.js";
+import { categories } from "../data/categories.js";
+import { items } from "../data/items.js";
 
 function Home() {
   const [coffees, setCoffees] = useState(items);
