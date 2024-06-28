@@ -2,7 +2,7 @@ export const profiles = [
     {
       id: 1,
       name: 'João Silva',
-      photo: 'https://randomuser.me/api/portraits/men/1.jpg',
+      photo: '../src/assets/images/profile/profile1.jpg',
       address: 'Rua das Flores, 123, São Paulo, SP',
       phone: '(11) 1234-5678',
       email: 'joao@gmail.com',
@@ -11,7 +11,7 @@ export const profiles = [
     {
       id: 2,
       name: 'Luiza Bagatoli',
-      photo: 'https://randomuser.me/api/portraits/women/1.jpg',
+      photo: '../src/assets/images/profile/profile2.jpg',
       address: 'Rua das Flores, 123, São Paulo, SP',
       phone: '(11) 1234-5678',
       email: 'luiza@gmail.com',
@@ -20,7 +20,7 @@ export const profiles = [
     {
       id: 3,
       name: 'Ronaldo Nascimento',
-      photo: 'https://randomuser.me/api/portraits/men/2.jpg',
+      photo: '../src/assets/images/profile/profile3.jpg',
       address: 'Rua das Flores, 123, São Paulo, SP',
       phone: '(11) 1234-5678',
       email: 'ronaldo@gmail.com',
