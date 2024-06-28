@@ -1,10 +1,10 @@
 import MainButton from "../components/buttons/MainButton.jsx";
 
-function Feedback({ imagem }) {
+function Feedback({ image }) {
   return (
     <div className="flex justify-center items-center h-screen">
       <div className="flex flex-col justify-center items-center gap-10">
-        <img src={imagem} />
+        <img src={image} />
         <p className="font-rosarivo text-2xl text-gray-600 text-center">
           Conta desconectada <br />
           com sucesso

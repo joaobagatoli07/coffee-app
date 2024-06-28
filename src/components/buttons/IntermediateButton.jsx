@@ -4,4 +4,4 @@ function IntermediateButton({ text }) {
     );
 }
 
-export default IntermediateButton
+export default IntermediateButton;
