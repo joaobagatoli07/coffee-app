@@ -3,7 +3,7 @@ import Logo from '../../assets/icons/Logo.jsx'
 import ProfileImage from '../display/ProfileImage.jsx';
 
 function Nav({ resetCoffees }) {
-    const isUserLogged = false;
+    const isUserLogged = localStorage.getItem('userLogged');
 
     return (
         <header className='flex justify-center items-center bg-amber-950 text-white text-sm pt-2 pb-2'>
@@ -17,13 +17,12 @@ function Nav({ resetCoffees }) {
             </nav>
             <div className='sm:w-1/5 flex justify-end gap-5'>
                 {isUserLogged ? (
-                    <div>
+                    <Link to="/perfil">
                         <ProfileImage
-                            src="src/assets/images/profilePicture.jpg"
-                            userName="João"
-                            size="12">
+                            idProfile={1}
+                            size={40}>
                         </ProfileImage>
-                    </div>
+                    </Link>
                 ) : (
                     <>
                         <div><Link to='/login'>Login</Link></div>

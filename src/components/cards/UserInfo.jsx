@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { profiles } from '/src/utils/profiles.js';
+import { profiles } from '../../data/profiles.js';
 
 import { CircleUser } from 'lucide-react';
 import { PencilLine } from 'lucide-react';

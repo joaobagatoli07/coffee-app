@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-import { profiles } from '/src/utils/profiles.js';
+import { profiles } from '../../data/profiles.js';
 
 function ProfileImage({ idProfile, size }) {
     const [users, setUsers] = useState([]);
