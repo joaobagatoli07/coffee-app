@@ -10,7 +10,7 @@ function SignIn() {
       buttonText="Entrar"
       linkText="Criar uma conta"
       linkPath="/cadastro">
-      <Input type="text" placeholder="Usuário" name="user" icon="user" />
+      <Input type="email" placeholder="Email" name="email" icon="email" />
       <Input type="password" placeholder="Senha" name="password" icon="lock" />
     </AuthForm>
   );

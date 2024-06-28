@@ -4,30 +4,32 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { SignInSchema } from "../../../utils/SignInSchema.js";
 import { SignUpSchema } from "../../../utils/SignUpSchema.js";
 import MainButton from "../../buttons/MainButton.jsx";
+import { profiles } from '../../../data/profiles.js';
 
 function AuthForm({ img, title, subtitle, children, buttonText, linkText, linkPath }) {
-  // const navigate = useNavigate();
-  let schema;
-
-  if (title === 'Login') {
-    schema = SignInSchema;
-  }
-  
-  if (title === 'Cadastro') {
-    schema = SignUpSchema;
-  }
+  const navigate = useNavigate();
+  let schema = title === 'Login' ? SignInSchema : SignUpSchema;
   
   const methods = useForm({
     resolver: yupResolver(schema),
   });
-
+  
   const onSubmit = (data) => {
-    console.log(data);
-  }
+    if (title == 'Login') {
+      const matchesEmail = profiles.find(p => p.email == data.email);
+      const matchesPassword = profiles.find(p => p.password == data.password);
 
-  // const redirectToHomePage = () => {
-  //   navigate('/');
-  // }
+      if (matchesEmail && matchesPassword) {
+        localStorage.setItem('userLogged', true);
+        navigate('/');
+      }
+    }
+
+    if (title == 'Cadastro') {
+      profiles.push(data);
+      navigate('/login');
+    }
+  }
 
   return (
     <FormProvider {...methods}>

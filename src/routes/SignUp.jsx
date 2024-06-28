@@ -10,9 +10,9 @@ function SignUp() {
             linkText="Já possuo uma conta"
             linkPath="/login">
             <Input type="text" placeholder="Nome" name="name" icon="user" />
+            <Input type="email" placeholder="Email" name="email" icon="email" />
             <Input type="tel" placeholder="Telefone" name="phone" icon="phone" />
             <Input type="password" placeholder="Senha" name="password" icon="lock" />
-            <Input type="password" placeholder="Confirme sua senha" icon="lock" />
         </AuthForm>
     );
 }

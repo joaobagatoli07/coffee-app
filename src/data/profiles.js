@@ -5,8 +5,8 @@ export const profiles = [
       photo: 'https://randomuser.me/api/portraits/men/1.jpg',
       address: 'Rua das Flores, 123, São Paulo, SP',
       phone: '(11) 1234-5678',
+      email: 'joao@gmail.com',
       password: 'zeus123',
-      userName: 'joaosilva'
     },
     {
       id: 2,
@@ -14,8 +14,8 @@ export const profiles = [
       photo: 'https://randomuser.me/api/portraits/women/1.jpg',
       address: 'Rua das Flores, 123, São Paulo, SP',
       phone: '(11) 1234-5678',
+      email: 'luiza@gmail.com',
       password: 'ades123',
-      userName: 'luizabagos'
     },
     {
       id: 3,
@@ -23,8 +23,8 @@ export const profiles = [
       photo: 'https://randomuser.me/api/portraits/men/2.jpg',
       address: 'Rua das Flores, 123, São Paulo, SP',
       phone: '(11) 1234-5678',
+      email: 'ronaldo@gmail.com',
       password: 'poseidon123',
-      userName: 'ronaldonasci'
     }
 ];
   
