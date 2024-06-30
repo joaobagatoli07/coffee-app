@@ -20,20 +20,20 @@ function Coffee() {
                             <Heart size={30} className="stroke-amber-800" />
                         </div>
                     </section>
-                    <section className="flex mt-10 h-96">
+                    <section className="flex mt-10 h-72">
                         <div className="flex w-3/5 items-center justify-center ">
                             <div className="flex w-11/12 h-5/6 rounded-lg border-solid bg-zinc-100 border-gray-800 shadow-[_10px_10px_15px_rgba(0,0,0,0.1)]">
                                 <div className="flex w-2/4 items-center justify-center" >
-                                    <div className="flex w-11/12 h-3/6 rounded-lg">
-                                        <img src={coffee.image} alt={coffee.title} />
+                                    <div className="flex w-11/12 h-3/4 rounded-lg">
+                                        <img  className="h-full object-cover w-full rounded"   src={coffee.image} alt={coffee.title} />
                                     </div>
                                 </div>
                                 <div className="flex w-2/4 items-center">
                                     <div className="flex-col w-10/12 justify-center">
-                                        <div className="text-2xl text-amber-800">{coffee.title}</div>
-                                        <div className="text-base text-black">{coffee.subtitle}</div>
-                                        <div className="text-2xl text-amber-800">Descrição</div>
-                                        <div className="text-base text-black">{coffee.description}</div>
+                                        <div className="text-xl text-amber-800">{coffee.title}</div>
+                                        <div className="text-xs text-black">{coffee.subtitle}</div>
+                                        <div className="text-xl text-amber-800">Descrição</div>
+                                        <div className="text-xs text-black">{coffee.description}</div>
                                     </div>
                                 </div>
                             </div>
