@@ -1,5 +1,6 @@
 import SelectButon from '../components/buttons/SelectButton.jsx';
-import CoffeeResume from '../components/cards/CoffeeResume.jsx'
+import CoffeeResume from '../components/cards/CoffeeResume.jsx';
+import CoffeePrice from '../components/cards/CoffeePrice.jsx';
 
 function Cart() {
   return (
@@ -11,16 +12,14 @@ function Cart() {
         <section className="flex justify-center mt-10">
           <SelectButon />
         </section>
-        <section className="flex mt-10 h-72">
-          <div className="flex w-3/5 items-center justify-center">
-            <div className="flex w-11/12 h-5/6 rounded-lg border-solid bg-zinc-100 border-gray-800 shadow-[_10px_10px_15px_rgba(0,0,0,0.1)]">
+        <section className="flex justify-center h-72">
+          <div className="flex items-center gap-10">
+            <div>
               <CoffeeResume />
             </div>
-            {/* <div className="flex w-2/5 items-center justify-center">
-              <div className="flex items-center justify-center w-11/12 h-5/6 bg-zinc-100 rounded-lg shadow-[_10px_10px_25px_rgba(0,0,0,0.1)] border-solid border-slate-200">
-
-              </div>
-            </div> */}
+            <div>
+              <CoffeePrice />
+            </div>
           </div>
         </section>
       </main>

@@ -1,9 +1,6 @@
 import { CirclePlus } from "lucide-react";
 import { CircleMinus } from "lucide-react";
 
-
-
-
 function CoffeeResume({ product, description, size, price, quantity, imageUrl }) {
 
     return (
@@ -24,10 +21,7 @@ function CoffeeResume({ product, description, size, price, quantity, imageUrl })
                 <p>{quantity = "1"}</p>
                 <button><CirclePlus></CirclePlus></button>
             </div>
-
         </div>
-
-
     )
 }
 
