@@ -11,7 +11,6 @@ function CoffeePrice() {
                 </a>
             </div>
             
-
             <div className="flex text-[15px] p-[16px] gap-16">
                 <div>
                     <p>Subtotal</p>
