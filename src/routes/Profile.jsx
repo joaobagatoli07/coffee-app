@@ -1,4 +1,4 @@
-
+import UserInfo from '../components/cards/UserInfo'
 import ProfileImage from "../components/display/ProfileImage";
 
 function Error() {
@@ -8,7 +8,10 @@ function Error() {
         <div className="flex gap-5">
             <ProfileImage idProfile={1} size={'200px'} />
             <div className="flex flex-col gap-5">
-                
+                <UserInfo title='Nome' type='João Silva' />
+                <UserInfo title='Telefone' type='(11) 1234-5678' />
+                <UserInfo title='Email' type='joao@gmail.com' />
+                <UserInfo title='Endereço' type='Rua das Flores, 123, São Paulo, SP' />
             </div>
         </div>
       </div>
