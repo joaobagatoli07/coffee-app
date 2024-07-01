@@ -1,19 +1,29 @@
-import ProfileImage from "../components/display/ProfileImage";
-import Notification from "../components/display/Notification";
-import CoffeePrice from "../components/cards/CoffeePrice";
-import CoffeeResume from "../components/cards/CoffeeResume";
+import SelectButon from '../components/buttons/SelectButton.jsx';
+import CoffeeResume from '../components/cards/CoffeeResume.jsx'
 
 function Cart() {
   return (
-    <div className="flex flex-col gap-5 p-6">
-      <Notification type={'Info'} description={'Você pode ser legal.'} />
-      <Notification type={'Error'} description={'Você não é legal.'} />
-      <Notification type={'Success'} description={'Você é legal.'} />
-      <Notification type={'Warning'} description={'Você talvez seja legal.'} />
-      <ProfileImage idProfile={3} size={'100px'} />
-      <CoffeeResume/>
-      
+    <div className="h-screen flex justify-center">
+      <main className="w-4/5">
+        <section className="flex justify-center mt-10">
+          <span className="font-rosarivo text-4xl text-amber-800">Carrinho</span>
+        </section>
+        <section className="flex justify-center mt-10">
+          <SelectButon />
+        </section>
+        <section className="flex mt-10 h-72">
+          <div className="flex w-3/5 items-center justify-center">
+            <div className="flex w-11/12 h-5/6 rounded-lg border-solid bg-zinc-100 border-gray-800 shadow-[_10px_10px_15px_rgba(0,0,0,0.1)]">
+              <CoffeeResume />
+            </div>
+            {/* <div className="flex w-2/5 items-center justify-center">
+              <div className="flex items-center justify-center w-11/12 h-5/6 bg-zinc-100 rounded-lg shadow-[_10px_10px_25px_rgba(0,0,0,0.1)] border-solid border-slate-200">
 
+              </div>
+            </div> */}
+          </div>
+        </section>
+      </main>
     </div>
   )
 }

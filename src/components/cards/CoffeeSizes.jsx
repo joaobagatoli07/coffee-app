@@ -1,6 +1,13 @@
 import { GlassWater } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 function CoffeSizes() {
+    const navigate = useNavigate();
+
+    function navigateToCartPage() {
+        navigate("/carrinho");
+    }
+
     return (
         <div className='flex flex-col justify-center items-center gap-3 w-[270px] m-0'>
             <div className='flex flex-col items-center gap-0'>
@@ -32,7 +39,7 @@ function CoffeSizes() {
                     <p>Preço</p>
                     <p className='text-amber-900'>R$ 18,50</p>
                 </div>
-                <button className='flex justify-center items-center bg-amber-900 rounded text-white p-2 hover:bg-gray-100 hover:text-amber-900'>Adicionar ao carrinho</button>
+                <button className='flex justify-center items-center bg-amber-900 rounded text-white p-2 hover:bg-gray-100 hover:text-amber-900' onClick={navigateToCartPage}>Adicionar ao carrinho</button>
             </div>
         </div>
     )

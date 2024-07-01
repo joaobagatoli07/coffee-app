@@ -21,7 +21,7 @@ function Coffee() {
                         </div>
                     </section>
                     <section className="flex mt-10 h-72">
-                        <div className="flex w-3/5 items-center justify-center ">
+                        <div className="flex w-3/5 items-center justify-center">
                             <div className="flex w-11/12 h-5/6 rounded-lg border-solid bg-zinc-100 border-gray-800 shadow-[_10px_10px_15px_rgba(0,0,0,0.1)]">
                                 <div className="flex w-2/4 items-center justify-center" >
                                     <div className="flex w-11/12 h-3/4 rounded-lg">
