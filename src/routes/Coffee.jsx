@@ -30,10 +30,10 @@ function Coffee() {
                                 </div>
                                 <div className="flex w-2/4 items-center">
                                     <div className="flex-col w-10/12 justify-center">
-                                        <div className="text-xl text-amber-800">{coffee.title}</div>
-                                        <div className="text-xs text-black">{coffee.subtitle}</div>
-                                        <div className="text-xl text-amber-800">Descrição</div>
-                                        <div className="text-xs text-black">{coffee.description}</div>
+                                        <div className="text-lg text-amber-800">{coffee.title}</div>
+                                        <div className="text-sm text-black">{coffee.subtitle}</div>
+                                        <div className="text-lg text-amber-800 mt-2">Descrição</div>
+                                        <div className="text-sm text-black">{coffee.description}</div>
                                     </div>
                                 </div>
                             </div>
