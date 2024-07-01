@@ -1,5 +1,6 @@
 import UserInfo from '../components/cards/UserInfo'
 import ProfileImage from "../components/display/ProfileImage";
+import IntermediateButton from '../components/buttons/IntermediateButton'
 
 function Error() {
     return (
@@ -12,6 +13,7 @@ function Error() {
                 <UserInfo title='Telefone' type='(11) 1234-5678' />
                 <UserInfo title='Email' type='joao@gmail.com' />
                 <UserInfo title='Endereço' type='Rua das Flores, 123, São Paulo, SP' />
+                <IntermediateButton text='Sair' />
             </div>
         </div>
       </div>
