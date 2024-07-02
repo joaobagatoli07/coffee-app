@@ -20,8 +20,7 @@ export const items = [
         medium: 4.50,
         large: 5.50
     },
-    // image: 'src/assets/images/coffee/product/Caramel_Macchiato4.png',
-    image: '../assets/images/coffee/product/Caramel_Macchiato4.png',
+    image: 'src/assets/images/coffee/product/Caramel_Macchiato4.png',
     category:'Saborizados'
   },
   {
